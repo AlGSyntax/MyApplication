@@ -9,42 +9,60 @@
     app:cardElevation="8dp"
     app:cardBackgroundColor="@color/white">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:padding="16dp">
 
         <ImageView
             android:id="@+id/imageViewIcon"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/baseline_language_24" />
+            android:layout_alignParentStart="true"
+            android:src="@drawable/baseline_language_24"
+            />
 
         <TextView
             android:id="@+id/textViewQuestion"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/imageViewIcon"
+            android:layout_marginStart="8dp"
             android:textSize="18sp"
             android:fontFamily="sans-serif-medium"
-            android:gravity="center"
-            android:text="Question text comes here"
+            android:text="question_text_comes_here"
             android:textColor="@color/black" />
 
-        <!-- Hier fügen wir die TextView für die Antwort hinzu -->
+        <ImageView
+            android:id="@+id/editIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="48dp"
+            android:src="@drawable/baseline_edit_24"
+             />
+
+        <ImageView
+            android:id="@+id/deleteIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_toEndOf="@id/editIcon"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/baseline_delete_24"
+             />
+
         <TextView
             android:id="@+id/textViewAnswer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/textViewQuestion"
             android:layout_marginTop="8dp"
             android:textSize="16sp"
             android:fontFamily="sans-serif"
-            android:gravity="center"
-            android:text="Answer text comes here"
+            android:text="answer_text_comes_here"
             android:textColor="@color/black"
-            android:visibility="gone" /> <!-- Standardmäßig unsichtbar -->
-    </LinearLayout>
+            android:visibility="gone" />
 
+    </RelativeLayout>
 </com.google.android.material.card.MaterialCardView>
+
