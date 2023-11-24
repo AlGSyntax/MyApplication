@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/imageViewIcon"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="1dp"
             android:textSize="18sp"
             android:fontFamily="sans-serif-medium"
             android:text="question_text_comes_here"
@@ -38,18 +38,18 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="48dp"
+            android:layout_marginEnd="24dp"
             android:src="@drawable/baseline_edit_24"
-             />
+            android:contentDescription="@string/edit" />
 
         <ImageView
             android:id="@+id/deleteIcon"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:layout_toEndOf="@id/editIcon"
-            android:layout_marginStart="8dp"
+            android:layout_toStartOf="@id/editIcon"
+            android:layout_marginEnd="16dp"
             android:src="@drawable/baseline_delete_24"
-             />
+            android:contentDescription="@string/delete" />
 
         <TextView
             android:id="@+id/textViewAnswer"
