@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/materialCardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    app:cardCornerRadius="4dp"
-    app:cardElevation="4dp">
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,23 +15,36 @@
         android:orientation="vertical"
         android:padding="16dp">
 
+        <ImageView
+            android:id="@+id/imageViewIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/baseline_language_24" />
+
         <TextView
             android:id="@+id/textViewQuestion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:textSize="18sp"
             android:fontFamily="sans-serif-medium"
-            android:text="Question text comes here" />
+            android:gravity="center"
+            android:text="Question text comes here"
+            android:textColor="@color/black" />
 
-        <!-- Du kannst die Sichtbarkeit dieser TextView programmatisch steuern -->
+        <!-- Hier fügen wir die TextView für die Antwort hinzu -->
         <TextView
             android:id="@+id/textViewAnswer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:textSize="16sp"
             android:fontFamily="sans-serif"
+            android:gravity="center"
             android:text="Answer text comes here"
-            android:visibility="gone" />
+            android:textColor="@color/black"
+            android:visibility="gone" /> <!-- Standardmäßig unsichtbar -->
     </LinearLayout>
 
 </com.google.android.material.card.MaterialCardView>

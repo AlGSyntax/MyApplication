@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ADD8E6"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -59,7 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="292dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="679dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -74,10 +75,10 @@
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="371dp"
+        android:layout_marginStart="360dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="691dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="679dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,6 +89,7 @@
         android:id="@+id/recyclerView"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="#ADD8E6"
         app:layout_constraintBottom_toTopOf="@+id/buttonBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -114,7 +116,8 @@
             android:textColor="#FFFFFF"
             android:textColorHighlight="#FFFFFF"
             android:textColorHint="#FFFFFF"
-            android:textColorLink="#FFFFFF" />
+            android:textColorLink="#FFFFFF"
+            app:strokeColor="#000000" />
 
         <Button
             android:id="@+id/editButton"
