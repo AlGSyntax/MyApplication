@@ -32,6 +32,8 @@ class FlashcardAdapter(
             }
         }
 
+
+        //Binden
         fun bind(flashcard: Flashcard) {
             binding.textViewQuestion.text = flashcard.question
             binding.textViewAnswer.text = flashcard.answer
